@@ -19,7 +19,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.alibaba.fastjson.JSON;
 import com.zhoujiim.constant.Constants;
-import com.zhoujiim.push.ios.Http2APNSPusher;
 import com.zhoujiim.server.connertor.ImConnertor;
 import com.zhoujiim.server.exception.PushException;
 import com.zhoujiim.server.group.ImChannelGroup;
@@ -76,8 +75,8 @@ public class ImConnertorImpl implements ImConnertor{
       		 */ 
       		if (session != null) {
       			boolean result = session.write(wrapper.getBody());
-      			Http2APNSPusher.getInstance().push("7dd30c783d4c63e3e7171a20a7c0b9729ad148c97578534e0d4325612a8345e8"
-      					, "老司机", "{msgid:1,content:'推送消息内容测试',url:'http://10.10.43.109:8080/zhoujiim-server/login?account=xiaoxiang&password=123456',date:"+new Date().getTime()+"}", 99);
+      			//Http2APNSPusher.getInstance().push("7dd30c783d4c63e3e7171a20a7c0b9729ad148c97578534e0d4325612a8345e8"
+      			//		, "老司机", "{msgid:1,content:'推送消息内容测试',url:'http://10.10.43.109:8080/zhoujiim-server/login?account=xiaoxiang&password=123456',date:"+new Date().getTime()+"}", 99);
       			return ;
       		}
         } catch (Exception e) {

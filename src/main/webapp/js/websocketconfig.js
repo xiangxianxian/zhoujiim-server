@@ -1,4 +1,4 @@
-var websocketurl="ws://10.10.43.109:2048/ws";   //ws://{ip}:{端口}/{java后端websocket配置的上下文}
+var websocketurl="ws://45.126.180.121:2048/ws";   //ws://{ip}:{端口}/{java后端websocket配置的上下文}
 var reconnectflag = false;//避免重复连接
 var socket; 
 
